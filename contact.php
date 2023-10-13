@@ -1,25 +1,34 @@
 <?php
+// Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get the form data
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
+  // Get the form data
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
 
-    // Validate the form data (you can add more validation if needed)
+  // Set the recipient email address
+  $to = "saxena.abhi7007@gmail.com";
 
-    // Process the form data (you can store it in a database, send an email, etc.)
+  // Set the email subject
+  $subject = "New Contact Form Submission";
 
-    // Example: Send an email
-    $to = "saxena.abhi7007@gmail.com";
-    $subject = "Personal Website Contact Form";
-    $body = "Name: " . $name . "\n";
-    $body .= "Email: " . $email . "\n";
-    $body .= "Message: " . $message . "\n";
+  // Set the email headers
+  $headers = "From: $name <$email>\r\n";
+  $headers .= "Reply-To: $email\r\n";
 
-    if (mail($to, $subject, $body)) {
-        echo "Thank you for your message. We will get back to you soon.";
-    } else {
-        echo "Oops! Something went wrong. Please try again later.";
-    }
+  // Send the email
+  $success = mail($to, $subject, $message, $headers);
+
+  // Check if the email was sent successfully
+  if ($success) {
+    // Set the success message
+    $response = "Thank you for your message! We will get back to you soon.";
+  } else {
+    // Set the error message
+    $response = "Oops! An error occurred and your message could not be sent.";
+  }
+
+  // Return the response message
+  echo $response;
 }
 ?>

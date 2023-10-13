@@ -121,6 +121,11 @@ $(document).ready(function () {
     }
   });
 
+  // smooth scroll to top
+  $(document).on("click", "#moveUp", function () {
+    $.fn.fullpage.moveTo(1);
+  });
+  
   // move section down one
   $(document).on("click", "#moveDown", function () {
     $.fn.fullpage.moveSectionDown();
