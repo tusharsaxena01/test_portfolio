@@ -79,8 +79,8 @@ $(document).ready(function () {
     scrollBar: true,
     responsiveWidth: 400,
     navigation: true,
-    navigationTooltips: ["home", "about", "portfolio", "contact", "connect"],
-    anchors: ["home", "about", "portfolio", "contact", "connect"],
+    navigationTooltips: ["home", "about", "projects", "contact", "connect"],
+    anchors: ["home", "about", "projects", "contact", "connect"],
     menu: "#myMenu",
     fitToSection: false,
 
@@ -201,12 +201,17 @@ $(document).ready(function () {
         })
         .fail(function (data) {
           // Make sure that the formMessages div has the 'error' class.
-          $(formMessages).removeClass("success");
-          $(formMessages).addClass("error");
+          // $(formMessages).removeClass("success");
+          // $(formMessages).addClass("error");
+
+          // handling the contact using formspree so no error
+          $(formMessages).removeClass("error");
+          $(formMessages).addClass("success");
+
 
           // Set the message text.
           if (data.responseText !== "") {
-            $(formMessages).text(data.responseText);
+            $(formMessages).text("Message send Successfully");
           } else {
             $(formMessages).text(
               "Oops! An error occured and your message could not be sent."
