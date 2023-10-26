@@ -1502,7 +1502,7 @@ footer .credits a {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 42rem;
+  height: 48rem;
   /* background-color: #777; */
 }
 .carousel-item > img {
@@ -1510,7 +1510,7 @@ footer .credits a {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 42rem;
+  height: 48rem;
 }
 
 #projectCarousel > a.carousel-control-prev{
@@ -1551,21 +1551,21 @@ footer .credits a {
   display: inline-block;
   padding: 0.5em 1.7em;
   margin: 0 0.1em 0.1em 0;
-  border: 0.16em solid rgb(95,95,95);
+  border: 0.16em solid rgb(255, 255, 255);
   border-radius: 2em;
   box-sizing: border-box;
   text-decoration: none;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #ffffff;
   text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
   text-align: center;
-  transition: all 0.2s;
-  background-color: rgba(55, 55, 55, .6);
+  transition: all 0.5s;
 }
 
 .bn3:hover {
-  border: 0.16em solid rgb(255,255,255);
   color: black;
   background-color: rgb(255, 255, 255);
 }
+
