@@ -1,232 +1,1132 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!DOCTYPE html> 
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Abhi Saxena</title>
-  <meta name="description" content="Personal Website">
-  <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
-  <script src="https://kit.fontawesome.com/e6cdca426e.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <title>Abhi Saxena - Android Developer, Web Developer, Graphics Designer</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">  
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
+  <!-- Favicons --> 
+  <link href="https://avatars.githubusercontent.com/u/71825717?v=4" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <script src="https://kit.fontawesome.com/a467a44203.js" crossorigin="anonymous"></script> -->
+  <script src="https://kit.fontawesome.com/e6cdca426e.js" crossorigin="anonymous"></script> <!-- icons in skills -->
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">            <!-- animation in projects -->
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+  <!-- Circular progress  bar-->
+  <link href="css/toxprogress.css" rel="stylesheet">
+  <script src="lib/toxprogress/toxprogress.js"></script>
+
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<body>
-  <!-- navbar header -->
-  <div class="nav-header" data-anchor="home">
-    <div class="nav-brand">
-      <!-- <img src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/bradlogo2.png"> -->
-      <img src="https://avatars.githubusercontent.com/u/71825717?v=4" style="border-radius: 50%;">
-    </div>
-    <i class="fa fa-bars fa-3x"></i>
-    <div class="header-links">
-      <ul>
-        <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
-        <li data-menuanchor="thirdPage"><a href="#projects">PROJECTS</a></li>
-        <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-        <li data-menuanchor="firstPage" id="moveUp" class=".fa-chevron-up"><a href="#home">HOME</a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- end navbar header -->
 
-  <!-- sidebar slider -->
-  <div class="nav-screen">
-    <i class="fa fa-times fa-3x"></i>
-    <div class="nav-container">
-      <div class="nav-links">
-        <ul id='myMenu'>
-          <li data-menuanchor="firstPage"><a href="#home">HOME</a></li>
-          <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-          <li data-menuanchor="thirdPage"><a href="#projects">PROJECTS</a></li>
-          <li data-menuanchor="fourthPage" id="moveUp" class=".fa-chevron-up"><a href="#contact">CONTACT</a></li>
+<body id="page-top">
+
+  <!--/ Nav Start /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">Abhi Saxena</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#education">Education</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link js-scroll" href="#experience">Experience</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#activities">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#projects">Projects</a>
+          </li>
         </ul>
       </div>
     </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Start /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/code.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">Abhi Saxena</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Android App Developer, Web Developer, Graphics Designer</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- end navbar slider -->
+  <!--/ Intro Skew End /-->
 
-  <!-- begin fullpage -->
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="https://avatars.githubusercontent.com/u/71825717?v=4" class="img-fluid rounded b-shadow-a" alt="" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>Abhi Saxena</span></p>
+                      <p><span class="title-s">Profile: </span> <span>Software Developer</span></p>
+                      <p><span class="title-s">Email: </span> <span>saxena.abhi7007@gmail.com</span></p>
+                      <p><span class="title-s">Phone: </span> <span>+91-7007459349</span></p>
+                    </div>
+                  </div>
+                </div>
+                
 
-  <div id="fullpage">
+                <BR><BR><BR><BR><BR>
+                <div class="middle" style="text-align: center;">
+                  <button class="grow_skew_forward" onclick="location.href='https://tusharsaxena01.github.io/resume/Abhi_Saxena_Resume.pdf'" style="outline: none;" >Download Resume</button>  <!--   &rarr;  -->
+                </div>
 
-    <!-- begin section -->
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      About me
+                    </h5>
+                  </div>
+                  <p class="lead" align="justify">
+                    I'm a final-year Computer Science student that enjoys computers, technologies, and learning new things.
+                  </p>
+                  <p class="lead" align="justify">
+                    Develops Android applications with passion.
+                  </p>
+                  <p class="lead" align="justify">
+                    Possess a significant interest in competitive programming and web development.
+                  </p>
+                  <p class="lead" align="justify">
+                    Interested in graphic design as well as a variety of other creative tools.<br>
+                    Eager to learn more about my surroundings.
+                  </p>
+                  <p class="lead" align="justify">
+                    Always vibrant and eager to pick up new knowledge and abilities.
+                  </p>      
+                </div>
+              </div>
+            </div>
 
-    <div class="section aboutme" data-anchor="aboutme">
-      <div class="opaque-bg animated fadeInDown">
-        <h1 style="color:white">Abhi<span style="color:#FF6363"> Saxena</span></h1>
-        <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
-      </div>
-      <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
-    </div>
-    <!-- end section -->
+            <BR>
 
-    <!-- begin section -->
-
-    <div class="section" data-anchor="skills">
-      <div class="content">
-        <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
-        <p class="wow fadeInDown" data-wow-delay="0.2s" style="text-align: justify;">Hi, I'm Abhi Saxena! 
-          I'm an eager Computer Science student with a strong foundation and diverse skills, including coding, web development, mobile app development, and  graphic design. My passion for tackling challenges has grown through coding competitions and internships, driving my commitment to continuous  learning and growth in the tech world.</p>
-
-        <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
-          <div class="skillbar clearfix " data-percent="90%">
-            <div class="skillbar-title" style="background: #DD1E2F;"><span>Python</span></div>
-            <div class="skillbar-bar" style="background: #DD1E2F;"></div>
-            <div class="skill-bar-percent">90%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="80%">
-            <div class="skillbar-title" style="background: #EBB035;"><span>Java</span></div>
-            <div class="skillbar-bar" style="background: #EBB035;"></div>
-            <div class="skill-bar-percent">80%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="75%">
-            <div class="skillbar-title" style="background: #218559;"><span>Graphics Design</span></div>
-            <div class="skillbar-bar" style="background: #218559;"></div>
-            <div class="skill-bar-percent">75%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="65%">
-            <div class="skillbar-title" style="background: #6840D4;"><span>Android Studio</span></div>
-            <div class="skillbar-bar" style="background: #6840D4;"></div>
-            <div class="skill-bar-percent">65%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="60%">
-            <div class="skillbar-title" style="background: #06A2CB;"><span>Web Development</span></div>
-            <div class="skillbar-bar" style="background: #06A2CB;"></div>
-            <div class="skill-bar-percent">60%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="55%">
-            <div class="skillbar-title" style="background: #AB4DD2;"><span>UI/UX Design</span></div>
-            <div class="skillbar-bar" style="background: #AB4DD2;"></div>
-            <div class="skill-bar-percent">55%</div>
-          </div> <!-- End Skill Bar -->
-        </div>
-      </div>
-      <div class="wow fadeInUp" data-wow-delay="1s">
-        <a href=".\resume\Abhi_Saxena_Resume.pdf" download>
-        <button id="submit" name="submit" class="btn btn-lg">DOWNLOAD RESUME</button>
-        </a>
-      </div>
-      </div>
-    <!-- end section -->
-
-    <!-- begin section -->
-
-    <div class="section" data-anchor="projects">
-      <div class="content-slide">
-        <div class="slide">
-          <h1 class="wow fadeInDown" data-wow-delay="0.2s">Web Based Encryptor and Decryptor</h1>
-          <p class="wow fadeInDown" data-wow-delay="0.2s">A User-friendly Encryptor Decryptor tool on your device</p>
-          <span><a href="https://github.com/tusharsaxena01/Static_Encryptor_Decryptor" target="_blank"><i class="fa fa-github fa-2x"></i>&nbsp;&nbsp;View Code</a></span>
-          <!-- <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/xfaire.jpg"> -->
-        </div>
-        <div class="slide">
-          <h1>Voterium</h1>
-          <p>Blockchain Based E-Voting System</p>
-          <span><a href="https://github.com/tusharsaxena01/Voterium" target="_blank"><i class="fa fa-github fa-2x"></i>&nbsp;&nbsp;View Code</a></span>
-          <!-- <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/machete.jpg"> -->
-        </div>
-        <div class="slide">
-          <h1>Eduzo</h1>
-          <p>Educational Zone - Android Application</p>
-          <span><a href="https://github.com/tusharsaxena01/Eduzo" target="_blank"><i class="fa fa-github fa-2x"></i>&nbsp;&nbsp;View Code</a></span>
-          <!-- <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/cascioportfolio.jpg"> -->
-        </div>
-        <div class="slide">
-          <h1>ZappChat</h1>
-          <p>Android Chatting Application</p>
-          <span><a href="https://github.com/tusharsaxena01/ZappChat" target="_blank"><i class="fa fa-github fa-2x"></i>&nbsp;&nbsp;View Code</a></span>
-          <!-- <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/blog.jpg"> -->
-        </div>
-        <div class="slide">
-          <h1>Portfolio</h1>
-          <p>Personal Website</p>
-          <span>Currently on the Site &#x1F609;</span>
-          <!-- <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/pixbored.jpg"> -->
-        </div>
-        <!-- add further projects as we move on -->
-        <!-- <div class="slide">
-          <h1>PERSONAL WEBSITE</h1>
-          <p>Responsive vertical/horizontal header website theme.</p>
-          <!-- <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/personalsite.jpg"> -->
+            <div class="socials" style="text-align: center;">
+                    <ul>
+                      <li><a href="mailto: saxena.abhi7007@gmail.com" target="_blank"><span class="ico-circle"><i class="fa-solid fa-envelope"></i></span></a></li>
+                      <li><a href="https://www.linkedin.com/in/abhi-saxena-88626922a/" target="_blank"><span class="ico-circle"><i class="fa-brands fa-linkedin-in"></i></span></a></li>
+                      <li><a href="https://github.com/tusharsaxena01" target="_blank"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+                      <!--<li><a href="" target="_blank"><span class="ico-circle"><i class="fab fa-google-play rounded-circle"></i></span></a></li>-->
+                      <li><a href="https://www.hackerrank.com/tusharsaxena7861" target="_blank"><span class="ico-circle"><i class="fa-brands fa-hackerrank"></i></span></a></li>
+                    </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- end section -->
+  </section>
 
-    <!-- begin section -->
+  <BR><BR><BR><BR><BR>
 
-    <div class="section" data-anchor="contact">
-      <div class="content wow fadeInDown" data-wow-delay="0.2s">
-        <h1>CONTACT ME</h1>
-        <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
-        <br>
-        <div class="contact-form">
+  <!-- My Education -->
+  <section id = "education">
+    <!-- <div class = "h1 text-center" style="color:#FFFFFF" data-aos="zoom-in-up"><i class = "fas fa-graduation-cap"></i> My <b>Education</b></div> -->
+    <h3 class="title-a text-center" style="color:#FFFFFF">EDUCATION</h3>
+    <div class="line-mf"></div><BR>
 
-          <div id="form-messages"></div>
-          <form id="ajax-contact" method="post" role="form" action="https://formspree.io/f/xvojdryj" data-toggle="validator">
-            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
-              <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
-            </div>
+    <div class="d-flex align-items-center">
+                <ul class="list-group p-3 mx-auto" data-aos="flip-right">
+        <li class="list-group-item">
+          <div class="small" style="color: #b7b6bb">2021 - PRESENT</div>
+                        <div class="large font-weight-bold mt-2" style="color: #FFFFFF;">Buddha Institute of Technology</div>
+                    <div class="small" style="color: #b7b6bb">Gida, Gorakhpur</div>
+                    <div class="font-weight-light mt-1" style="color: #7b7a7f">Bachelor of Engineering in Computer Science</div>
 
-            <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
-              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
-            </div>
+        </li>
+        <br />
+        <li class="list-group-item">
+          <div class="small" style="color: #b7b6bb">2018 - 2021</div>
+                        <div class="large font-weight-bold mt-2" style="color: #FFFFFF;">Vikas Institute of Engineering &amp; Technology</div>
+                    <div class="small" style="color: #b7b6bb">Gulharia, Gorakhpur</div>
+                    <div class="font-weight-light mt-1" style="color: #7b7a7f">Diploma in Computer Science</div>
 
-            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
-              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
-            </div>
+        </li>
+        </li>
+        <br />
+        <li class="list-group-item">
+          <div class="small" style="color: #b7b6bb">2017 - 2018</div>
+                        <div class="large font-weight-bold mt-2" style="color: #FFFFFF;">Divine Public School</div>
+                    <div class="small" style="color: #b7b6bb">Bicchiya, Gorakhpur</div>
+                    <div class="font-weight-light mt-1" style="color: #7b7a7f">High School</div>
 
-            <div class="hidden">
-              <input type="text" class="form-control" id="human" name="human" placeholder="">
-            </div>
-            <div class="wow fadeInUp" data-wow-delay="1s">
-              <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
-            </div>
-          </form>
-          <br>
-        </div>  
-      </div>
+        </li>
     </div>
-    <!-- end section -->
+  </section>
+  
+  <!-- My Education -->
 
-    <!-- begin section -->
+   <!-- <BR><BR><BR><BR><BR><BR><BR> -->
 
-    <div class="section fp-auto-height">
-      <div class="footer">
-        <p>CONNECT WITH ME</p>
-        <div class="social-links">
-          <span><a target="_blank" href="https://www.linkedin.com/in/abhi-saxena-88626922a/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
-          <span><a target="_blank" href="https://www.hackerrank.com/tusharsaxena7861" target="_blank"><i class="fa fa-brands fa-hackerrank fa-2x"></i></a></span>
-          <span><a href="https://github.com/tusharsaxena01/" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
-          <!-- <span><a href="https://codepen.io/SquishyAndroid/pens/public/"><i class="fa fa-codepen fa-2x"></i></a></span> -->
+
+    <!-- My Experience -->
+    <!-- Hiding Experience Section till i'm a fresher -->
+  <!-- <section id = "experience">
+    <h3 class="title-a text-center" style="color:#FFFFFF">EXPERIENCE</h3>
+    <div class="line-mf"></div><BR>
+
+    <div class="d-flex align-items-center" style="color: white">
+                <ul class="list-group p-3 mx-auto" data-aos="flip-right">
+        <li class="list-group-item">
+          <div class="small" >November, 2020 - PRESENT</div>
+          <div class="large font-weight-bold mt-2" style="color: #FFFFFF;font-size: 20px"><I>Innovator</I></div>
+          
+           <div class="medium" style="color: #b7b6bb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Digital Impact Square - A TCS Foundation Initiative</div>
+
+          <BR><BR>
+
+            Working as an Android & Web Developer  <BR>
+           View my Work =>
+
+        </li>
+    </div>
+
+          <div class="d-flex align-items-center" style="color: white">
+            <ul class="list-group p-3 mx-auto" data-aos="flip-right">
+      <li class="list-group-item">
+      <div class="small" >November, 2020 - PRESENT</div>
+      <div class="large font-weight-bold mt-2" style="color: #FFFFFF;font-size: 20px"><I>Android & Web Developer Intern</I></div>
+
+      <div class="medium" style="color: #b7b6bb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ekatvam Innovations Pvt Ltd.</div>
+
+      <BR><BR>
+
+        View my Work =>
+
+      </li>
+      </div>
+  </section> -->
+  
+  <!-- My Experience -->
+
+
+  <BR><BR><BR><BR><BR>
+
+  <!-- Skills Secton START -->
+  <!-- <section id="skills">
+        <div class="title-box text-center">
+            <h3 class="title-a" style="color:#FFFFFF">Skills</h3>
+            <p class="subtitle-a" style="color:#FFFFFF">When it comes to services everyone love to work with the Professional People.<BR>
+                            So with that I come with my Professional Skills.</p>
+            <div class="line-mf"></div>
+          </div>
+
+        <div class="container-fluid d-block mx-auto text-center" style="width:fit-content; align-items: left">
+            <div class="row justify-content-center align-items-center">
+          <div class="h4 mt-4" style="color:#FFFFFF;align-items: top">Languages:</div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="80" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="55" style="margin:auto" src="img/java4.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF; margin-top: 10px" class="text-center margin-top-xs">80%</p>
+                </div>
+
+            <div class="skill" style="color: #FFFFFF">
+
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="50" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                  
+                  <img height="55" style="margin:auto" src="img/kotlin1.png"/></P>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">50%</p>
+                </div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="60" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="55" style="margin:auto" src="img/dart.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">60%</p>
+                </div>    
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="50" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="55" style="margin:auto" src="img/python1.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">50%
+                </div>    
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="80" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="55" style="margin:auto" src="img/html.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">80%</p>
+                </div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="75" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="58" style="margin:auto" src="img/css.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">75%</p>
+                </div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="5" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="58" style="margin:auto" src="img/javascript.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">5%</p>
+                </div>
+
+           <!-- <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="10" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="50" style="margin:auto" src="https://pngimg.com/uploads/php/php_PNG7.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">10%</p>
+                </div>   -->
+
+            
+        <!--    </div>
+          </div>
+
+          <div class="container-fluid d-block mx-auto text-center" style="width:fit-content;">
+            
+            <div class="row justify-content-center align-items-center">
+          <div class="h4 mt-4" style="color:#FFFFFF">Frameworks:</div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="75" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="55" style="margin:auto" src="img/android.png"/>
+                </div>
+            </div>
+              <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">75%</p>
+            </div>
+
+
+                <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="60" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="55" style="margin:auto" src="img/flutter.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">60%</p>
+                </div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="70" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="55" style="margin:auto" src="img/bootstrap.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">70%</p>
+                </div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="90" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="55" style="margin:auto" src="img/nodejs.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">0%</p>
+                </div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="90" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="26" style="margin:auto" src="https://twilio-cms-prod.s3.amazonaws.com/images/django-dark.width-808.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">0%</p>
+                </div>
+
+            
+            </div>
+          </div>
+
+          <div class="container-fluid d-block mx-auto text-center" style="width:fit-content;">
+            
+            <div class="row justify-content-center align-items-center">
+          <div class="h4 mt-4" style="color:#FFFFFF">Databases:</div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="75" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="30" style="margin:auto" src="https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png"/>
+                </div>
+            </div>
+              <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">75%</p>
+            </div>
+
+
+                <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="0" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="50" style="margin:auto" src="img/mongodb.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">40%</p>
+                </div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="80" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="50" style="margin:auto" src="img/firebase.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">80%</p>
+                </div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="0" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="50" style="margin:auto" src="img/postgresql.png"/>
+                </div>
+            </div>
+            <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">0%</p>
+                </div>
+            
+            </div>
+          </div>
+
+          <div class="container-fluid d-block mx-auto text-center" style="width:fit-content;">
+            
+            <div class="row justify-content-center align-items-center">
+          <div class="h4 mt-4" style="color:#FFFFFF">Computer Vision:</div>
+
+            <div class="skill" style="color: #FFFFFF">
+                    <div style="margin: auto" class="tox-progress" data-size="90" data-thickness="10" data-color="#229922"
+                 data-background="black" data-progress="75" data-speed="7000">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="48" style="margin:auto" src="img/opencv.png"/>
+                </div>
+            </div>
+              <p style="font-family:'Josefin Sans', sans-serif;font-size: 1.3em; color: #FFFFFF;margin-top: 10px" class="text-center margin-top-xs">75%</p>
+            </div>
+
+            </div>
+          </div>
+
+          <div class="container-fluid d-block mx-auto text-center" style="width:fit-content;">            
+            <div class="row justify-content-center align-items-center">
+          <div class="h4 mt-4" style="color:#FFFFFF">Tools:</div>
+            
+                <div class="skill" style="color: #ffffff">
+                    <div class="fab fa-git-square  p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">Git</div>
+                </div>
+                <div class="skill" style="color: #ffffff">
+                    <div class="fab fa-github-square  p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">GitHub</div>
+                </div>
+                <div class="skill" style="color: #FFA611">
+                    <div><img src="https://cdn.dribbble.com/users/528264/screenshots/3140440/firebase_logo.png" alt="Firebase" width="55"></div>
+                    <div class="font-weight-bold">Firebase</div>
+                </div>
+                <div class="skill" style="color: #FFA611">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="JavaFX" width="100"></div>
+                </div>
+                <div class="skill" style="color: #FFA611">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png" alt="AWS" width="60"></div>
+                </div>
+                <div class="skill" style="color: #FF7435">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Illustrator_CC_icon.png" alt="Adobe Illustrator" width="26"></div>
+                    <div class="font-weight-bold" style="margin-top:10px">Adobe Illustrator</div>
+                </div>
+            </div>
+
+            <div class="h4 mt-4" style="color:#FFFFFF">Other:</div>
+            <div class="row justify-content-center align-items-center">
+                <div class="skill" style="color: #ffffff">
+                    <div class="fas fa-pen-alt p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">Technical Writing</div>
+                </div>
+              <div class="skill" style="color: #ffffff">
+                    <div class="fas fa-user-friends  p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">Team Management</div>
+                </div>
+                <div class="skill" style="color: #ffffff">
+                    <div class="fas fa-users p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">Team Leadership</div>
+                </div>
+                <div class="skill" style="color: #ffffff">
+                    <div class="fas fa-palette p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">UI/UX Designing</div>
+                </div>
+                <!-- <div class="skill" style="color: #ffffff">
+                    <div class="fas fa-user-plus p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">Communication Skills <BR><span style="opacity: 0.2">(still working on)</span></div>
+                </div>   -->
+         <!--   </div>
+          
+            <BR><BR><BR><BR>
+
+          <button class="grow_skew_forward" onclick="location.href='skills.html'" style="outline: none;">View skills gained in various fields</button>
+          	</div>
+        </section>  -->
+
+
+  <!-- Skills Section START -->
+  
+    <section id="skills">
+        <div class="title-box text-center">
+            <h3 class="title-a" style="color:#FFFFFF">Skills</h3>
+            <p class="subtitle-a" style="color:#FFFFFF">When it comes to services everyone love to work with the Professional People.<BR>
+                            So with that I come with my Professional Skills.</p>
+            <div class="line-mf"></div>
+          </div>
+
+        <div class="container-fluid d-block mx-auto text-center" style="width:fit-content;">
+            <div class="h4 mt-4" style="color:#FFFFFF">Languages:</div>
+            <div class="row justify-content-center align-items-center" data-aos="flip-right" data-aos-easing="linear"
+                data-aos-duration="500">
+   <div class="skill" style="color: #5c6bc0">
+                    <div><img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" alt="C" width="40"></div>
+                    <div class="font-weight-bold">C</div>
+                </div>
+    <!-- <div class="skill" style="color: #3386FF">
+                    <div><img src="https://user-images.githubusercontent.com/42747200/46140125-da084900-c26d-11e8-8ea7-c45ae6306309.png" alt="C++" width="30"></div>
+                    <div class="font-weight-bold">C++</div>
+                </div>  -->
+                <div class="skill" style="color: #f5f5f7">
+                    <div><img src="https://qph.fs.quoracdn.net/main-qimg-48b7a3d8958565e7aa3ad4dbf2312770.webp" alt="Java" width="40"></div>
+                    <div class="font-weight-bold">Java</div>
+                </div>
+                <!-- <div class="skill" style="color: #cf4237">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/1200px-Kotlin-logo.svg.png" alt="Kotlin" width="35"></div>
+                    <div class="font-weight-bold">Kotlin</div>
+                  </div> -->
+            <div class="skill" style="color: #f3c623">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png" alt="Python" width="35"></div>
+                    <div class="font-weight-bold">Python</div>
+            </div>
+            <div class="skill" style="color: #fd982c">
+                    <div><img src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png" alt="HTML" width="40" style="padding:10px;"></div>
+                    <div class="font-weight-bold">HTML</div>
+                </div>
+                <div class="skill" style="color: #559cc4">
+                    <div><img src="https://pluralsight.imgix.net/paths/path-icons/css-c9b214f0d7.png" alt="CSS" width="50"></div>
+                    <div class="font-weight-bold">CSS</div>
+                </div>
+                <div class="skill" style="color: #b2b200">
+                    <div><img src="https://pluspng.com/img-png/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png" alt="JavaScript" width="60"></div>
+                    <div class="font-weight-bold">JavaScript</div>
+                </div>
+
+                <!-- <div class="skill" style="color: #00D2B8">
+                    <div><img src="https://assets.stickpng.com/images/5847f289cef1014c0b5e486b.png" alt="Dart" width="35"></div>
+                    <div class="font-weight-bold">Dart</div>
+                </div> -->
+            </div>
+
+            <div class="h4 mt-4" style="color:#FFFFFF">Technologies/Frameworks:</div>
+            <div class="row justify-content-center align-items-center" data-aos="flip-right" data-aos-easing="linear"
+                data-aos-duration="500">
+                <div class="skill" style="color: #29bf0f">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.png" alt="C" width="30"></div>
+                    <div class="font-weight-bold">Android</div>
+                </div>
+                <!-- <div class="skill" style="color: #0f96bf">
+                    <div><img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" alt="C" width="27"></div>
+                    <div class="font-weight-bold">Flutter</div>
+                </div> -->
+                <div class="skill" style="color: #4e3f8c">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1024px-Bootstrap_logo.svg.png" alt="C" width="32"></div>
+                    <div class="font-weight-bold">Bootstrap</div>
+                </div>
+                <div class="skill" style="color: #00bcff">
+                    <div><img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="C" width="32"></div>
+                    <div class="font-weight-bold">Figma</div>
+                </div>
+                <!-- <div class="skill" style="color: #83CD29">
+                    <div><img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_960_720.png" alt="C" width="80"></div>
+                </div> -->
+                <!-- <div class="skill" style="color: #FFFFFF">
+                    <div><img src="https://twilio-cms-prod.s3.amazonaws.com/images/django-dark.width-808.png" alt="C" width="75"></div>
+                </div> -->
+            </div>
+
+            <div class="h4 mt-4" style="color:#FFFFFF">Databases:</div>
+            <div class="row justify-content-center align-items-center" data-aos="flip-right" data-aos-easing="linear"
+                data-aos-duration="500">
+                <div class="skill" style="color: #6685e4">
+                    <div class="fas fa-database  p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">SQL</div>
+                </div>
+                <div class="skill" style="color: #4DB33D">
+                    <div><img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png" alt="C" width="40"></div>
+                    <div class="font-weight-bold">MongoDB</div>
+                </div>
+                <div class="skill" style="color: #FFA611">
+                    <div><img src="https://cdn.dribbble.com/users/528264/screenshots/3140440/firebase_logo.png" alt="C" width="50"></div>
+                    <div class="font-weight-bold">Firebase</div>
+                </div>
+            </div>
+
+            <!-- <div class="h4 mt-4" style="color:#FFFFFF">Computer Vision: </div><div class="font-weight-bold" style="color:#FFFFFF">OpenCV</div> -->
+            <div class="h4 mt-4" style="color:#FFFFFF">Tools:</div>
+            <div class="row justify-content-center align-items-center" data-aos="flip-right" data-aos-easing="linear"
+                data-aos-duration="500">
+                <div class="skill" style="color: #ffffff">
+                    <div class="fab fa-git-square  p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">Git</div>
+                </div>
+                <div class="skill" style="color: #ffffff">
+                    <div class="fab fa-github-square  p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">GitHub</div>
+                </div>
+                <div class="skill" style="color: #FFA611">
+                    <div><img src="https://cdn.dribbble.com/users/528264/screenshots/3140440/firebase_logo.png" alt="C" width="50"></div>
+                    <div class="font-weight-bold">Firebase</div>
+                </div>
+                <!-- <div class="skill" style="color: #FFA611">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="JavaFX" width="100"></div>
+                </div> -->
+                <div class="skill" style="color: #21caff">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_Mobile_icon.svg/1200px-Adobe_Photoshop_Mobile_icon.svg.png" alt="Adobe Illustrator" width="26"></div>
+                    <div class="font-weight-bold" style="margin-top:10px">Adobe Photoshop</div>
+                </div>
+                <div class="skill" style="color: #FF7435">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Illustrator_CC_icon.png" alt="Adobe Illustrator" width="26"></div>
+                    <div class="font-weight-bold" style="margin-top:10px">Adobe Illustrator</div>
+                </div>
+                <div class="skill" style="color: #9999ff">
+                    <div><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/adobe-animate-icon.png" alt="Adobe XD" width="32"></div>
+                    <div class="font-weight-bold" style="margin-top:5px">Adobe Animate</div>
+                </div>
+                <div class="skill" style="color: #ffd9f2">
+                    <div><img src="https://download.logo.wine/logo/Adobe_XD/Adobe_XD-Logo.wine.png" alt="Adobe XD" width="62"></div>
+                    <div class="font-weight-bold" style="margin-top:5px">Adobe XD</div>
+                </div>
+                <div class="skill" style="color: #d1e02a">
+                    <div><img src="https://images.fmctraining.com/images/davinci-logo.png" width="36"></div>
+                    <div class="font-weight-bold" style="margin-top:10px">Davinci Resolve</div>
+                </div>
+            </div>
+
+            <div class="h4 mt-4" style="color:#FFFFFF">Other:</div>
+            <div class="row justify-content-center align-items-center" data-aos="flip-right" data-aos-easing="linear"
+                data-aos-duration="500">
+                <div class="skill" style="color: #ffffff">
+                  <!-- <i class="fa-solid fa-lightbulb" style="color: #f7f7f7;"></i> -->
+                    <div class="fas p-0 m-1 fa-solid fa-lightbulb" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">Problem Solving</div>
+                </div>
+                <div class="skill" style="color: #ffffff">
+                    <div class="fas fa-pen-alt p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">Technical Writing</div>
+                </div>
+              <div class="skill" style="color: #ffffff">
+                    <div class="fas fa-user-friends  p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">Team Management</div>
+                </div>
+                <div class="skill" style="color: #ffffff">
+                    <div class="fas fa-users p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">Team Leadership</div>
+                </div>
+                <div class="skill" style="color: #ffffff">
+                    <div class="fas fa-palette p-0 m-1" style="font-size: 30px"></div>
+                    <div class="font-weight-bold">UI/UX Designing</div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <!-- Skills Section END -->
+
+
+  <!--/ Section Services Star /-->
+  <!--
+  <section id="service" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a" style="color:#FFFFFF">
+              Services
+            </h3>
+            <p class="subtitle-a">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-monitor"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Web Design</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Web Development</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-camera"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Photography</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Responsive Design</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Graphic Design</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Marketing Services</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- end section -->
+  </section>  -->
+  <!--/ Section Services End /-->
 
+
+  <BR><BR><BR><BR><BR><BR><BR>
+
+  <!-- My Activities Section START -->
+  <section id="activities" style="color: white">
+      <div class="title-box text-center">
+      <h3 class="title-a card-title" style="color: white">Activities &amp; Achievements</h3>
+            <div class="line-mf"></div>
+        </div>
+        
+        <ul class="list-group p-3 mx-auto" style="width: fit-content;" data-aos="flip-right">
+            <li class="list-group-item" style=" background: transparent;">
+      <div class="small" style="color: #b7b6bb">2023 - PRESENT</div>
+                <div class="large mt-2">Developing Android mobiles apps or APIs.</div>
+        </li>
+      <li class="list-group-item" style=" background: transparent;">
+    <div class="small" style="color: #b7b6bb">October, 2023</div>
+                <div class="large mt-2">Secured <B><I>1<sup>st</sup></I> Position</B> in <i>"Python Bytes" Coding Event, Buddha Sharad Mahotsav, BIT</i>.</div>
+      </li>
+      <li class="list-group-item" style=" background: transparent;">
+    <div class="small" style="color: #b7b6bb">March, 2023</div>
+                <div class="large mt-2">Got Recognition for participating in AKTU State Level TLM Tech Fest, Lucknow.</div>
+      </li>
+      <li class="list-group-item" style=" background: transparent;">
+      <div class="small" style="color: #b7b6bb">March, 2023</div>
+              <div class="large mt-2">Secured <B><i>1<sup>st</sup></i> Position</B> in <i>"Game of Codes" Coding Event, AKTU Zonal Tech Fest</i>.</div>
+      </li>
+      <li class="list-group-item" style=" background: transparent;">
+    <div class="small" style="color: #b7b6bb">February, 2023</div>
+                <div class="large mt-2">Secured <b><i>1<sup>st</sup></i> Position</b> in <i>"Read My Mind" Coding Event, Tech Wizard, BIT</i>.</div>
+      </li>
+      <li class="list-group-item" style=" background: transparent;">
+    <div class="small" style="color: #b7b6bb">January, 2023</div>
+                <div class="large mt-2">Secured <B><I>1<sup>st</sup></I> Position</B> in Computer Science 3<sup>rd</sup> Year Division for the project "Voterium" in Tech Yuva, BIT.</div>
+      </li>
+      <li class="list-group-item" style=" background: transparent;">
+    <div class="small" style="color: #b7b6bb">December, 2022</div>
+                <div class="large mt-2">Secured <B><I>2<sup>nd</sup></I> Position</B> in "Coding Competition" organized in Tech Wizard, BIT.</div>
+      </li>
+      <li class="list-group-item" style=" background: transparent;">
+    <div class="small" style="color: #b7b6bb">November, 2022</div>
+                <div class="large mt-2">Secured <B><I>2<sup>nd</sup></I> Position</B> in Computer Science 2<sup>nd</sup> Year Division for the project "Web Based Encryptor &amp; Decryptor" in Tech Yuva, BIT.</div>
+      </li>
+  </ul>
+  </section>
+  <!-- My Activities Section END -->
+
+  <BR><BR><BR><BR><BR>
+
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+            </div>
+            <div class="counter-num">
+              <div>
+              <span class="counter">10</span>&nbsp;<span style="font-size:25px">+</span>
+            </div>
+              <span class="counter-text">PROJECTS COMPLETED</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">2</p>
+              <span class="counter-text">SPECIALIZED COURSES</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-people"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">1</p>
+              <span class="counter-text">CERTIFICATION</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">6</p>
+              <span class="counter-text">AWARDS WON</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- end fullpage -->
-</body>
-<!-- partial -->
-  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script><script  src="./script.js"></script>
+
+  <BR><BR><BR><BR><BR>
+
+  <!--/ Projects Start /-->
+  <section id="projects" class="portfolio-mf sect-pt4 route" style="color: white">
+    <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a" style="color:#FFFFFF">Projects</h3>
+            <p class="subtitle-a" style="color:#FFFFFF">Took lots of Hardwork, Sleepless Nights, and lots of Tea.</p>
+            <div class="line-mf"></div>
+            <br>
+            
+    <div id="projectCarousel" class="carousel slide container" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#projectCarousel" data-slide-to="1"></li>
+        <li data-target="#projectCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="first-slide" src="./img/web-based-encryptor-decryptor.png" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h2><b>Web-Based Encryptor Decryptor</b></h2>
+              <p align="justify">Developed a static Web-based application which is used to encrypt or decrypt and try out some of the popular cryptographic algorithms on your own device. The User Interface is dynamic and responsive according to different screen size using HTML, CSS, JavaScript and Bootstrap.
+                </p>
+              <p><a class="btn btn-lg bn3" href="https://tusharsaxena01.github.io/Static_Encryptor_Decryptor/" role="button" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;&nbsp;View Live</a>
+                <a class="btn btn-lg bn3" href="https://github.com/tusharsaxena01/Static_Encryptor_Decryptor" role="button" target="_blank"><i class="ion-social-github"></i>&nbsp;&nbsp;Check on GitHub</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="second-slide" src="./img/beautiful_header.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h2><b>Another example headline.</b></h2>
+              <p align="justify">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg bn3" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="./img/" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h2><b>One more for good measure.</b></h2>
+              <p align="justify">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg bn3" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <BR>
+<!-- 
+            Go & check out my projects here 
+
+
+	<BR>
+    <button class="grow_skew_forward" onclick="location.href='projects.html'" style="outline: none">View All Projects</button>
+          </div> -->
+
+        </div>
+    </div>
+
+    
+    
+
+    
+    
+  </section>
+  <!--/ Projects End /-->
+
+
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/k.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Contact Me
+                    </h5>
+                  </div>
+                  <div>
+                      <form action="" method="post" role="form" class="contactForm">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
+                      <div id="errormessage"></div>
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <!--<button type="submit" class="button button-a button-big button-rouded">Send Message</button>-->
+                          <button type="submit" class="grow_skew_forward" onclick="location.href=''" style="outline: none">Send Message</button>  <!--   &rarr;  -->
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Get in Touch
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      If you have any awesome idea that you would want me to develop ?<BR>
+                      Feel free to contact me.
+                      
+                    </p>
+                    <ul class="list-ico">
+                      <li><span class="ion-ios-location"></span>Gorakhpur, Uttar Pradesh</li>
+                      <li><span class="ion-ios-telephone"></span> +91-7007459349</li>
+                      <li><span class="ion-email"></span>saxena.abhi7007@gmail.com</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>2023 Abhi Saxena</strong>. All Rights Reserved</p>
+              <div class="credits">
+                Developed by <a href="https://bootstrapmade.com/">Abhi Saxena</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader">
+  		Loading Abhi's Website...
+  </div>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        ToxProgress.create();
+        ToxProgress.animate();
+    });
+</script>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  
 
 </body>
 </html>
