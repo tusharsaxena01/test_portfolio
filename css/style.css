@@ -1271,7 +1271,17 @@ footer .credits a {
 //--//-->   CONtaCT FORM
 ======================================*/
 
-#sendmessage {
+#my-form-status {
+  /* color: #0078ff; */
+  /* border: 1px solid #0078ff; */
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.sendmessage {
   color: #0078ff;
   border: 1px solid #0078ff;
   display: none;
@@ -1281,7 +1291,7 @@ footer .credits a {
   margin-bottom: 15px;
 }
 
-#errormessage {
+.errormessage {
   color: red;
   display: none;
   border: 1px solid red;
@@ -1290,12 +1300,12 @@ footer .credits a {
   font-weight: 600;
   margin-bottom: 15px;
 }
-
-#sendmessage.show,
-#errormessage.show,
+/* 
+.sendmessage.show,
+.errormessage.show,
 .show {
   display: block;
-}
+} */
 
 .validation {
   color: red;

@@ -1,142 +1,51 @@
-jQuery(document).ready(function($) 
-{
-  "use strict";
 
-  //Contact
-  $('form.contactForm').submit(function() 
-  {
-    var f = $(this).find('.form-group'),
-      ferror = false,
-      emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+var form = document.getElementById("contact-form");
 
-    f.children('input').each(function() 
-    { // run all inputs
-
-      var i = $(this); // current input
-      var rule = i.attr('data-rule');
-
-      if (rule !== undefined) 
-      {
-        var ierror = false; // error flag for current input
-        var pos = rule.indexOf(':', 0);
-        if (pos >= 0) 
-        {
-          var exp = rule.substr(pos + 1, rule.length);
-          rule = rule.substr(0, pos);
-        } 
-        else 
-        {
-          rule = rule.substr(pos + 1, rule.length);
-        }
-
-        switch (rule) 
-        {
-          case 'required':
-            if (i.val() === '') 
-            {
-              ferror = ierror = true;
-            }
-            break;
-
-          case 'minlen':
-            if (i.val().length < parseInt(exp)) 
-            {
-              ferror = ierror = true;
-            }
-            break;
-
-          case 'email':
-            if (!emailExp.test(i.val())) 
-            {
-              ferror = ierror = true;
-            }
-            break;
-
-          case 'checked':
-            if (! i.is(':checked')) 
-            {
-              ferror = ierror = true;
-            }
-            break;
-
-          case 'regexp':
-            exp = new RegExp(exp);
-            if (!exp.test(i.val())) 
-            {
-              ferror = ierror = true;
-            }
-            break;
-        }
-        i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
-      }
-    });
-    f.children('textarea').each(function() 
-    { // run all inputs
-
-      var i = $(this); // current input
-      var rule = i.attr('data-rule');
-
-      if (rule !== undefined) 
-      {
-        var ierror = false; // error flag for current input
-        var pos = rule.indexOf(':', 0);
-        if (pos >= 0) 
-        {
-          var exp = rule.substr(pos + 1, rule.length);
-          rule = rule.substr(0, pos);
-        } 
-        else 
-        {
-          rule = rule.substr(pos + 1, rule.length);
-        }
-
-        switch (rule) 
-        {
-          case 'required':
-            if (i.val() === '') 
-            {
-              ferror = ierror = true;
-            }
-            break;
-
-          case 'minlen':
-            if (i.val().length < parseInt(exp)) 
-            {
-              ferror = ierror = true;
-            }
-            break;
-        }
-        i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
-      }
-    });
-    if (ferror) return false;
-    else var str = $(this).serialize();
-    var action = $(this).attr('action');
-    if( ! action ) 
-    {
-      action = 'https://formspree.io/f/xvojdryj';
-    }
-    $.ajax({
-      type: "POST",
-      url: action,
-      data: str,
-      success: function(msg) 
-      {
-        // alert(msg);
-        if (msg == 'OK') 
-        {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("my-form-status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+  method: form.method,
+  body: data,
+  headers: {
+      'Accept': 'application/json'
+  }
+  }).then(response => {
+    if (response.ok) {
+      if(status.classList.contains('errormessage'))
+        status.classList.replace('errormessage', 'sendmessage');
+      else
+        status.classList.add('sendmessage');
+      status.innerHTML = "Thanks for your submission!";
+      status.style.display = "block";
+      form.reset()
+    } else {
+      response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          if(status.classList.contains('sendmessage'))
+            status.classList.replace('sendmessage', 'errormessage');
+          else
+            status.classList.add('errormessage');
+          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          status.style.display = "block";
         } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
+          if(status.classList.contains('sendmessage'))
+            status.classList.replace('sendmessage', 'errormessage');
+          else
+            status.classList.add('errormessage');
+          status.innerHTML = "Oops! There was a problem submitting your form"
+          status.style.display = "block";
         }
-
-      }
-    });
-    return false;
+      })
+    }
+  }).catch(error => {
+    if(status.classList.contains('sendmessage'))
+      status.classList.replace('sendmessage', 'errormessage');
+    else
+      status.classList.add('errormessage');
+    status.innerHTML = "Oops! There was a problem submitting your form"
+    status.style.display = "block";
   });
-
-});
+}
+form.addEventListener("submit", handleSubmit)
