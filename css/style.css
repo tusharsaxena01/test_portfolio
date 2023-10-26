@@ -491,7 +491,8 @@ button[class^="grow"]:hover::after
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(10px);
 }
 
 #preloader:before 
